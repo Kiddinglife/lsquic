@@ -52,6 +52,7 @@ Some open source code required to be installed to build the code include:
         ```
         vcpkg install zlib:x64-windows-static
         vcpkg install libevent:x64-windows-static
+        vcpkg install  pcre:x64-windows-static
         vcpkg integrate install
         ```
    - Clone and compile boringssl.  It can be cloned from [here](https://boringssl.googlesource.com/boringssl).
@@ -59,9 +60,8 @@ Some open source code required to be installed to build the code include:
         ```
         git clone https://boringssl.googlesource.com/boringssl
         cd boringssl
-        cmake -DCMAKE_GENERATOR_PLATFORM=x64 --config Debug -DBUILD_SHARED_LIBS=OFF -DOPENSSL_NO_ASM=1 .
-        msbuild ALL_BUILD.vcxproj
-        set boringssl=%cd%
+        cmake -DCMAKE_GENERATOR_PLATFORM=x64  -DBUILD_SHARED_LIBS=OFF -DOPENSSL_NO_ASM=1 .
+        cmake --build . --config Debug
         ```
    - Visual Studio can be run, and the project opened within the boringssl
      directory.  Set the solution configuration to *Debug* and the solution 

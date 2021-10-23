@@ -1,0 +1,15 @@
+{
+  "cmake.configureOnOpen": true,
+  "cmake.parallelJobs": 8,
+  "cmake.generator": "Visual Studio 16 2019",
+  "cmake.buildArgs": [],
+  "cmake.loggingLevel": "info",
+  "cmake.installPrefix": "Install",
+  "cmake.configureSettings": {
+    "BUILD_SHARED_LIBS": "OFF",
+    "CMAKE_BUILD_TYPE": "Debug",
+    "BORINGSSL_DIR": "C:\\Users\\JZ106540\\source\\repos\\sandbox\\lsquic-fork\\boringssl",
+    "VCPKG_TARGET_TRIPLET": "x64-windows-static",
+    "CMAKE_TOOLCHAIN_FILE": "C:/Users/JZ106540/source/repos/sandbox/vcpkg/scripts/buildsystems/vcpkg.cmake"
+  }
+}
